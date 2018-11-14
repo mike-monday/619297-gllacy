@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Михаил Кононенко](https://up.htmlacademy.ru/htmlcss/23/user/619297).
-* Наставник: `Неизвестно`.
+* Наставник: [Денис Власов](https://htmlacademy.ru/profile/amaringo).
 
 ---
 
