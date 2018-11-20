@@ -20,7 +20,7 @@
     </div>
   </nav>
   <div class="info-phone">
-    <p>С 10 до 20, Ежедневно<span class="phone">8 812 450-25-25</span></p>
+    <p>С 10 до 20, Ежедневно<span class="phone"> <a href="tel:88124502525">8 812 450-25-25</a></span></p>
   </div>
 </header>
 <main class="container">
@@ -33,6 +33,47 @@
     </ul>
   </div>
   <h2>Сливочное мороженое</h2>
+  <div class="filter">
+    <form class="filter-form" action="index.html" method="post" oninput="priceout.value=price.value">
+      <div class="select">
+      <p>Сортировка:</p>
+     <select name="items">
+       <option>По попуоярности</option>
+       <option>По цене <</option>
+       <option>По цене ></option>
+     </select>
+     </div>
+     <div class="range">
+       <label for="price">Цена:100 руб. - 500 руб.</label>
+     <input type="range" id="price" name="price" min="100" max="500" step="5">
+     </div>
+     <div class="output">
+       <output name="priceout"></output>
+     </div>
+     <div class="radio">
+       <p>Жирность</p>
+       <input type="radio" name="fat-content" value="0">0%
+       <input type="radio" name="fat-content" value="10" checked> до 10%
+       <input type="radio" name="fat-content" value="30">До 30%
+       <input type="radio" name="fat-content" value="over30">Выше 30%
+     </div>
+     <div class="checkbox">
+       <input type="checkbox" name="fillers" id="fillers1" checked>
+       <label for="fillers1">Шоколадные</label>
+       <input type="checkbox" name="fillers" id="fillers2" checked>
+       <label for="fillers2">Сахарные присыпки</label>
+       <input type="checkbox" name="fillers" id="fillers3">
+       <label for="fillers3">Фрукты</label>
+       <input type="checkbox" name="fillers" id="fillers4">
+       <label for="fillers4">Сиропы</label>
+       <input type="checkbox" name="fillers" id="fillers5">
+       <label for="fillers5">Джемы</label>
+     </div>
+     <div class="submit-fiter">
+       <button type="submit" name="submit-form">Применить</button>
+     </div>
+    </form>
+  </div>
   <section class="catalog">
     <ul class="catalog-items">
       <li><img src="img/orange.png" alt="1">Сливочное с апельсиновым джемом и цитрусовой стружкой<p>310₽<span>/кг</span></p></li>
@@ -49,6 +90,15 @@
       <li><img src="img/syrup.png" alt="12">Сливочное с мятным сиропом<p>420₽<span>/кг</span></p></li>
     </ul>
   </section>
+  <div class="pages-list">
+    <ul class="pages">
+      <li><a href="#">1</a></li>
+      <li><a href="#">2</a></li>
+      <li><a href="#">3</a></li>
+      <li><a href="#">4</a></li>
+      <li><a href="#">5</a></li>
+    </ul>
+  </div>
 </main>
 <footer class="main-footer">
   <div class="social-footer">
