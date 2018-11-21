@@ -20,7 +20,7 @@
     </div>
   </nav>
   <div class="info-phone">
-    <p>С 10 до 20, Ежедневно<span class="phone"> <a href="tel:88124502525">8 812 450-25-25</a></span></p>
+    <p>С 10 до 20, Ежедневно<span class="phone"><a href="tel:88124502525">8 812 450-25-25</a></span></p>
   </div>
 </header>
 <main class="container">
@@ -39,8 +39,8 @@
       <p>Сортировка:</p>
      <select name="items">
        <option>По попуоярности</option>
-       <option>По цене <</option>
-       <option>По цене ></option>
+       <option>По цене &lt</option>
+       <option>По цене &gt</option>
      </select>
      </div>
      <div class="range">
@@ -52,10 +52,14 @@
      </div>
      <div class="radio">
        <p>Жирность</p>
-       <input type="radio" name="fat-content" value="0">0%
-       <input type="radio" name="fat-content" value="10" checked> до 10%
-       <input type="radio" name="fat-content" value="30">До 30%
-       <input type="radio" name="fat-content" value="over30">Выше 30%
+       <input type="radio" name="fat-content" id="fat-0" value="0">
+       <label for="fat-0">0%</label>
+       <input type="radio" name="fat-content" id="fat-10" value="10" checked>
+       <label for="fat-10">до 10%</label>
+       <input type="radio" name="fat-content" id="fat-sub-30" value="30">
+       <label for="fat-sub-30">До 30%</label>
+       <input type="radio" name="fat-content" id="fat-over-30" value="over30">
+       <label for="fat-over-30">Выше 30%</label>
      </div>
      <div class="checkbox">
        <input type="checkbox" name="fillers" id="fillers1" checked>
@@ -92,11 +96,13 @@
   </section>
   <div class="pages-list">
     <ul class="pages">
+      <li><button type="button" name="previous">&lt</button></li>
       <li><a href="#">1</a></li>
       <li><a href="#">2</a></li>
       <li><a href="#">3</a></li>
       <li><a href="#">4</a></li>
       <li><a href="#">5</a></li>
+      <li><button type="button" name="next">&gt</button></li>
     </ul>
   </div>
 </main>
