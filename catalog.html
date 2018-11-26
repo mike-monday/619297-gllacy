@@ -10,18 +10,54 @@
     <a class="main-logo" href="index.html"><img src="img/svg/logo.svg" width="154" height="64" alt="логотип gllacy"></a>
     <ul class="site-navigation">
       <li><a href="catalog.html">Каталог</a></li>
+      <li>
+        <ul class="modal-list">
+         <li><a href="#"><span>Новинки</span></a></li>
+         <li><a href="#">Сливочное</a></li>
+         <li><a href="#">Щербеты</a></li>
+         <li><a href="#">Фруктовый Лед</a></li>
+         <li><a href="#">Мелорин</a></li>
+        </ul>
+      </li>
       <li><a href="delivery.html">Доставка и орлата</a></li>
       <li><a href="about.html">О компании</a></li>
     </ul>
     <div class="user-navigation">
-      <button type="button" name="search">Поиск</button>
-      <button type="button" name="login">Вход</button>
-      <button type="button" name="cart">Корзина</button>
+      <button class="btn-search" type="button" name="search">Поиск</button>
+        <section class="modal modal-searh">
+          <h2 class="vissually-hidden">Поиск</h2>
+          <label class="visually-hidden" for="search-user">Поиск</label>
+          <input type="search" name="search" id="search-user" placeholder="Что ищем?">
+        </section>
+      <button class="btn-login" type="button" name="login">Вход</button>
+        <section class="modal modal-login">
+          <h2 class="visually-hidden">Личный кабинет</h2>
+          <p class="visually-hidden">Введите свой логин и пароль</p>
+          <form class="login-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p>
+              <label class="visually-hidden" for="login-user">Логин</label>
+              <input class="login-form-user" type="text" name="login" id="login-user" placeholder="Электронная почта">
+            </p>
+            <p>
+              <label class="visually-hidden" for="password-user">Пароль</label>
+              <input class="login-form-password" type="password" name="password" id="password-user" placeholder="Пароль">
+            </p>
+            <p>
+              <button class="button" type="submit" name="button">Войти</button>
+              <a class="restore" href="#">Забыли пароль? Новая регистрация</a>
+            </p>
+          </form>
+        </section>
+      <button class="btn-cart" type="button" name="cart">Корзина</button>
+        <section class="madal modal-cart">
+          <h2 class="visually-hidden">Корзина</h2>
+          <button class="button" type="submit" name="button">Оформить заказ</button>
+        </section>
+    </div>
+    <div class="info-phone">
+      <p>С 10 до 20, Ежедневно<span class="phone"> <a href="tel:88124502525">8 812 450-25-25</a></span></p>
     </div>
   </nav>
-  <div class="info-phone">
-    <p>С 10 до 20, Ежедневно<span class="phone"><a href="tel:88124502525">8 812 450-25-25</a></span></p>
-  </div>
 </header>
 <main class="container">
   <h1 class="visually-hidden">Магазин мороженого Gllacy shop</h1>
