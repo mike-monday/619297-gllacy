@@ -12,7 +12,7 @@
       <li><a href="catalog.html">Каталог</a></li>
       <li>
         <ul class="modal-list">
-         <li><a href="#"><span>Новинки</span></a></li>
+         <li><a href="#">Новинки</a></li>
          <li><a href="#">Сливочное</a></li>
          <li><a href="#">Щербеты</a></li>
          <li><a href="#">Фруктовый Лед</a></li>
@@ -24,15 +24,13 @@
     </ul>
     <div class="user-navigation">
       <button class="btn-search" type="button" name="search">Поиск</button>
-        <section class="modal modal-searh">
-          <h2 class="vissually-hidden">Поиск</h2>
+      <section class="modal modal-search">
           <label class="visually-hidden" for="search-user">Поиск</label>
           <input type="search" name="search" id="search-user" placeholder="Что ищем?">
-        </section>
+      </section>
       <button class="btn-login" type="button" name="login">Вход</button>
-        <section class="modal modal-login">
-          <h2 class="visually-hidden">Личный кабинет</h2>
-          <p class="visually-hidden">Введите свой логин и пароль</p>
+      <section class="modal modal-login">
+          <h2 class="visually-hidden">Форма входа на сайт</h2>
           <form class="login-form" action="https://echo.htmlacademy.ru/" method="post">
             <p>
               <label class="visually-hidden" for="login-user">Логин</label>
@@ -44,18 +42,19 @@
             </p>
             <p>
               <button class="button" type="submit" name="button">Войти</button>
-              <a class="restore" href="#">Забыли пароль? Новая регистрация</a>
+              <a class="restore" href="#">Забыли пароль?</a>
+              <a class="register" href="#">Новая регистрация</a>
             </p>
           </form>
-        </section>
+      </section>
       <button class="btn-cart" type="button" name="cart">Корзина</button>
-        <section class="madal modal-cart">
+      <section class="madal modal-cart">
           <h2 class="visually-hidden">Корзина</h2>
-          <button class="button" type="submit" name="button">Оформить заказ</button>
-        </section>
+          <button class="button" type="button" name="button">Оформить заказ</button>
+      </section>
     </div>
     <div class="info-phone">
-      <p>С 10 до 20, Ежедневно<span class="phone"> <a href="tel:88124502525">8 812 450-25-25</a></span></p>
+      <p>С 10 до 20, Ежедневно<a href="tel:88124502525">8 812 450-25-25</a></p>
     </div>
   </nav>
 </header>
@@ -66,7 +65,7 @@
      <button type="button" name="button">Давайте оба</button>
      <section class="modal modal-mailout">
        <h2 class="visually-hidden">Форма Обратной связи</h2>
-       <p><span>Мы обязательно вам ответим</span></p>
+       <p>Мы обязательно вам ответим</p>
           <form class="mailout-form" action="https://echo.htmlacademy.ru/" method="post">
             <p>
                <label class="visually-hidden">Ваше имя
@@ -89,11 +88,6 @@
        </form>
         <button class="modal-close" type="button" name="button">Закрыть</button>
      </section>
-     <ul class="paginator">
-       <li><a href="#">1</a></li>
-       <li><a href="#">2</a></li>
-       <li><a href="#">3</a></li>
-     </ul>
   </div>
   <section class="banners">
     <div class="banner-one">
@@ -140,13 +134,11 @@
     <h2 class="visually-hidden">Рассылка</h2>
     <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем
        не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-       <div class="mailing-out-form">
-         <form class="mailing-form" action="https://echo.htmlacademy.ru/" method="post">
-           <label class="visually-hidden" for="mail-form">Подписаться на рассылку</label>
-           <input type="text" name="mailout" id="mail-form" placeholder="Электронная почта">
-           <button class="button" type="submit" name="button">Отправить</button>
-         </form>
-       </div>
+     <form class="mailing-form" action="https://echo.htmlacademy.ru/" method="post">
+        <label class="visually-hidden" for="mail-form">Подписаться на рассылку</label>
+        <input type="text" name="mailout" id="mail-form" placeholder="Электронная почта">
+        <button class="button" type="submit" name="button">Отправить</button>
+     </form>
   </section>
   <section class="map-info">
     <img src="img/map.jpg" alt="карта">

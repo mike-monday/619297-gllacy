@@ -12,7 +12,7 @@
       <li><a href="catalog.html">Каталог</a></li>
       <li>
         <ul class="modal-list">
-         <li><a href="#"><span>Новинки</span></a></li>
+         <li><a href="#">Новинки</a></li>
          <li><a href="#">Сливочное</a></li>
          <li><a href="#">Щербеты</a></li>
          <li><a href="#">Фруктовый Лед</a></li>
@@ -24,15 +24,13 @@
     </ul>
     <div class="user-navigation">
       <button class="btn-search" type="button" name="search">Поиск</button>
-        <section class="modal modal-searh">
-          <h2 class="vissually-hidden">Поиск</h2>
+      <section class="modal modal-search">
           <label class="visually-hidden" for="search-user">Поиск</label>
           <input type="search" name="search" id="search-user" placeholder="Что ищем?">
-        </section>
+      </section>
       <button class="btn-login" type="button" name="login">Вход</button>
         <section class="modal modal-login">
-          <h2 class="visually-hidden">Личный кабинет</h2>
-          <p class="visually-hidden">Введите свой логин и пароль</p>
+          <h2 class="visually-hidden">Форма входа на сайт</h2>
           <form class="login-form" action="https://echo.htmlacademy.ru/" method="post">
             <p>
               <label class="visually-hidden" for="login-user">Логин</label>
@@ -44,18 +42,19 @@
             </p>
             <p>
               <button class="button" type="submit" name="button">Войти</button>
-              <a class="restore" href="#">Забыли пароль? Новая регистрация</a>
+              <a class="restore" href="#">Забыли пароль?</a>
+              <a class="register" href="#">Новая регистрация</a>
             </p>
           </form>
         </section>
       <button class="btn-cart" type="button" name="cart">Корзина</button>
         <section class="madal modal-cart">
           <h2 class="visually-hidden">Корзина</h2>
-          <button class="button" type="submit" name="button">Оформить заказ</button>
+          <button class="button" type="button" name="button">Оформить заказ</button>
         </section>
     </div>
     <div class="info-phone">
-      <p>С 10 до 20, Ежедневно<span class="phone"> <a href="tel:88124502525">8 812 450-25-25</a></span></p>
+      <p>С 10 до 20, Ежедневно<a href="tel:88124502525">8 812 450-25-25</a></p>
     </div>
   </nav>
 </header>
@@ -70,7 +69,7 @@
   </div>
   <h2>Сливочное мороженое</h2>
   <div class="filter">
-    <form class="filter-form" action="index.html" method="post" oninput="priceout.value=price.value">
+    <form class="filter-form" action="https://echo.htmlacademy.ru/" method="post" oninput="priceout.value=price.value">
       <div class="select">
       <p>Сортировка:</p>
      <select name="items">
@@ -98,15 +97,15 @@
        <label for="fat-over-30">Выше 30%</label>
      </div>
      <div class="checkbox">
-       <input type="checkbox" name="fillers" id="fillers1" checked>
+       <input type="checkbox" name="fillers-chocolate" id="fillers1" checked>
        <label for="fillers1">Шоколадные</label>
-       <input type="checkbox" name="fillers" id="fillers2" checked>
+       <input type="checkbox" name="fillers-shugar" id="fillers2" checked>
        <label for="fillers2">Сахарные присыпки</label>
-       <input type="checkbox" name="fillers" id="fillers3">
+       <input type="checkbox" name="fillers-fruits" id="fillers3">
        <label for="fillers3">Фрукты</label>
-       <input type="checkbox" name="fillers" id="fillers4">
+       <input type="checkbox" name="fillers-syrup" id="fillers4">
        <label for="fillers4">Сиропы</label>
-       <input type="checkbox" name="fillers" id="fillers5">
+       <input type="checkbox" name="fillers-jam" id="fillers5">
        <label for="fillers5">Джемы</label>
      </div>
      <div class="submit-fiter">
@@ -132,13 +131,13 @@
   </section>
   <div class="pages-list">
     <ul class="pages">
-      <li><button type="button" name="previous">&lt</button></li>
+      <li><button type="button" name="previous">Назад</button></li>
       <li><a href="#">1</a></li>
       <li><a href="#">2</a></li>
       <li><a href="#">3</a></li>
       <li><a href="#">4</a></li>
       <li><a href="#">5</a></li>
-      <li><button type="button" name="next">&gt</button></li>
+      <li><button type="button" name="next">Вперед</button></li>
     </ul>
   </div>
 </main>
