@@ -85,13 +85,15 @@
         </div>
         <div class="range">
           <label for="price">Цена:100 руб. - 500 руб.</label>
+          <div class="range-input">
           <input type="range" id="price" name="price" min="100" max="500" step="5">
+          </div>
         </div>
         <div class="output">
           <output name="priceout"></output>
         </div>
+          <p>Жирность:</p>
         <div class="radio">
-          <p>Жирность</p>
           <input type="radio" name="fat-content" id="fat-0" value="0">
           <label for="fat-0">0%</label>
           <input type="radio" name="fat-content" id="fat-10" value="10" checked>
@@ -101,6 +103,7 @@
           <input type="radio" name="fat-content" id="fat-over-30" value="over30">
           <label for="fat-over-30">Выше 30%</label>
         </div>
+          <p>Наполнители:</p>
         <div class="checkbox">
           <input type="checkbox" name="fillers-chocolate" id="fillers1" checked>
           <label for="fillers1">Шоколадные</label>
@@ -114,7 +117,7 @@
           <label for="fillers5">Джемы</label>
         </div>
         <div class="submit-fiter">
-          <button type="submit" name="submit-form">Применить</button>
+          <button class="submit-filter" type="submit" name="submit-form">Применить</button>
         </div>
       </form>
     </div>
