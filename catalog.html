@@ -12,18 +12,10 @@
 <body>
   <header class="main-header">
     <nav class="main-navigation">
+      <div class="main-container-navigation">
       <a class="main-logo" href="index.html"><img src="img/svg/logo.svg" width="154" height="64" alt="логотип gllacy"></a>
       <ul class="site-navigation">
         <li><a href="catalog.html">Каталог</a></li>
-        <li>
-          <ul class="modal-list">
-            <li><a href="#">Новинки</a></li>
-            <li><a href="#">Сливочное</a></li>
-            <li><a href="#">Щербеты</a></li>
-            <li><a href="#">Фруктовый Лед</a></li>
-            <li><a href="#">Мелорин</a></li>
-          </ul>
-        </li>
         <li><a href="delivery.html">Доставка и орлата</a></li>
         <li><a href="about.html">О компании</a></li>
       </ul>
@@ -58,6 +50,7 @@
           <button class="button" type="button" name="button">Оформить заказ</button>
         </section>
       </div>
+      </div>
       <div class="info-phone">
         <p>С 10 до 20, Ежедневно<br><a href="tel:88124502525">8 812 450-25-25</a></p>
       </div>
@@ -72,9 +65,10 @@
         <li><a href="creamy.html">Сливочное</a></li>
       </ul>
     </div>
-    <h2>Сливочное мороженое</h2>
+    <h2 class="catalog-name">Сливочное мороженое</h2>
     <div class="filter">
       <form class="filter-form" action="https://echo.htmlacademy.ru/" method="post" oninput="priceout.value=price.value">
+        <div class="filter-container-one">
         <div class="select">
           <p>Сортировка:</p>
           <select name="items">
@@ -92,6 +86,7 @@
         <div class="output">
           <output name="priceout"></output>
         </div>
+        <div class="radio-container">
           <p>Жирность:</p>
         <div class="radio">
           <input type="radio" name="fat-content" id="fat-0" value="0">
@@ -103,6 +98,10 @@
           <input type="radio" name="fat-content" id="fat-over-30" value="over30">
           <label for="fat-over-30">Выше 30%</label>
         </div>
+        </div>
+        </div>
+        <div class="filter-container-two">
+          <div class="checkbox-container">
           <p>Наполнители:</p>
         <div class="checkbox">
           <input type="checkbox" name="fillers-chocolate" id="fillers1" checked>
@@ -116,8 +115,10 @@
           <input type="checkbox" name="fillers-jam" id="fillers5">
           <label for="fillers5">Джемы</label>
         </div>
+        </div>
         <div class="submit-fiter">
           <button class="submit-filter" type="submit" name="submit-form">Применить</button>
+        </div>
         </div>
       </form>
     </div>
@@ -183,6 +184,15 @@
       <p>Сделано в<a href="https://htmlacademy.ru/">HTML Academy</a>2017</p>
     </div>
   </footer>
+
+  <ul class="modal-list">
+    <li><a href="#">Новинки</a></li>
+    <li><a href="#">Сливочное</a></li>
+    <li><a href="#">Щербеты</a></li>
+    <li><a href="#">Фруктовый Лед</a></li>
+    <li><a href="#">Мелорин</a></li>
+  </ul>
+
 </body>
 
 </html>
