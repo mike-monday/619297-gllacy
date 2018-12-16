@@ -13,46 +13,22 @@
   <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
   <input class="visually-hidden" type="radio" id="product-2" name="toggle">
   <input class="visually-hidden" type="radio" id="product-3" name="toggle">
-  <div class="site-wraper">
+  <div class="site-wrapper">
     <header class="main-header">
       <nav class="main-navigation">
         <div class="main-container-navigation">
           <a class="main-logo" href="#"><img src="img/svg/logo.svg" width="154" height="64" alt="логотип gllacy"></a>
-          <ul class="site-navigation">
-            <li><a href="catalog.html">Каталог</a></li>
-            <li><a href="delivery.html">Доставка и оплата</a></li>
-            <li><a href="about.html">О компании</a></li>
-          </ul>
-          <div class="user-navigation">
-            <button class="btn-search btn" type="button" name="search">Поиск</button>
-            <section class="modal modal-search">
-              <label class="visually-hidden" for="search-user">Поиск</label>
-              <input type="search" name="search" id="search-user" placeholder="Что ищем?">
-            </section>
-            <button class="btn-login btn" type="button" name="login">Вход</button>
-            <section class="modal modal-login">
-              <h2 class="visually-hidden">Форма входа на сайт</h2>
-              <form class="login-form" action="https://echo.htmlacademy.ru/" method="post">
-                <p>
-                  <label class="visually-hidden" for="login-user">Логин</label>
-                  <input class="login-form-user" type="text" name="login" id="login-user" placeholder="Электронная почта">
-                </p>
-                <p>
-                  <label class="visually-hidden" for="password-user">Пароль</label>
-                  <input class="login-form-password" type="password" name="password" id="password-user" placeholder="Пароль">
-                </p>
-                <p>
-                  <button class="button" type="submit" name="button">Войти</button>
-                  <a class="restore" href="#">Забыли пароль?</a>
-                  <a class="register" href="#">Новая регистрация</a>
-                </p>
-              </form>
-            </section>
-            <button class="btn-cart btn" type="button" name="cart">Корзина</button>
-            <section class="madal modal-cart">
-              <h2 class="visually-hidden">Корзина</h2>
-              <button class="button" type="button" name="button">Оформить заказ</button>
-            </section>
+          <div class="navigation-wrapper">
+            <ul class="site-navigation">
+              <li><a href="catalog.html">Каталог</a></li>
+              <li><a href="delivery.html">Доставка и оплата</a></li>
+              <li><a href="about.html">О компании</a></li>
+            </ul>
+            <div class="user-navigation">
+              <button class="btn-search btn" type="button" name="search"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17"><path fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/></svg><span class="visually-hidden">Поиск</span></button>
+              <button class="btn-login btn" type="button" name="login"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19"><g fill="#fff"><path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/><path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></g></svg>Вход</button>
+              <button class="btn-cart btn" type="button" name="cart">Пусто<span class="visually-hidden">Корзина</span></button>
+            </div>
           </div>
         </div>
         <div class="info-phone">
@@ -97,7 +73,7 @@
       </section>
       <section class="products-index">
         <ul class="products">
-          <li><img src="img/orange.jpg" alt="1"><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+          <li class="product-hit"><img src="img/orange.jpg" alt="1"><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
             <p>310₽<span>/кг</span></p>
           </li>
           <li><img src="img/coffe.jpg" alt="2"><a href="#">Сливочно-кофейное с кусочками шоколада</a>
@@ -160,10 +136,10 @@
     <footer class="main-footer">
       <div class="social-footer">
         <ul>
-          <li><a href="#">Twitter</a></li>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">VK</a></li>
+          <li><a href="#"><span class="visually-hidden">Twitter</span></a></li>
+          <li><a href="#"><span class="visually-hidden">Instagram</span></a></li>
+          <li><a href="#"><span class="visually-hidden">Facebook</span></a></li>
+          <li><a href="#"><span class="visually-hidden">VK</span></a></li>
         </ul>
       </div>
       <div class="footer-menu">
@@ -193,19 +169,16 @@
       <p>Мы обязательно вам ответим</p>
       <form class="mailout-form" action="https://echo.htmlacademy.ru/" method="post">
         <p>
-          <label class="visually-hidden">Ваше имя
-            <input class="name-form-mailout" type="text" name="nameuser" placeholder="Как вас зовут?">
-          </label>
+          <label class="visually-hidden" for="your-name">Ваше имя</label>
+            <input class="name-form-mailout" type="text" name="nameuser" id="your-name" placeholder="Как вас зовут?">
         </p>
         <p>
-          <label class="visually-hidden">Ваша почта
-            <input class="name-form-mailout" type="text" name="mailuser" placeholder="Ваша почта для ответа?">
-          </label>
+          <label class="visually-hidden" for="your-mail">Ваша почта</label>
+            <input class="name-form-mailout" type="text" name="mailuser" id="your-mail" placeholder="Ваша почта для ответа?">
         </p>
         <p>
-          <label class="visually-hidden">Ваше сообщение
-            <textarea name="comment" rows="12" cols="60" placeholder="Напишите что-нибудь..."></textarea>
-          </label>
+          <label class="visually-hidden" for="your-text">Ваше сообщение</label>
+            <textarea name="comment" rows="12" cols="60" id="your-text" placeholder="Напишите что-нибудь..."></textarea>
         </p>
         <p>
           <button class="button" type="submit" name="button">Отправить</button>
@@ -213,6 +186,36 @@
       </form>
       <button class="modal-close" type="button" name="button">Закрыть</button>
     </section>
+
+    <section class="modal modal-search">
+      <label class="visually-hidden" for="search-user">Поиск</label>
+      <input type="search" name="search" id="search-user" placeholder="Что ищем?">
+    </section>
+
+    <section class="modal modal-login">
+      <h2 class="visually-hidden">Форма входа на сайт</h2>
+      <form class="login-form" action="https://echo.htmlacademy.ru/" method="post">
+        <p>
+          <label class="visually-hidden" for="login-user">Логин</label>
+          <input class="login-form-user" type="text" name="login" id="login-user" placeholder="Электронная почта">
+        </p>
+        <p>
+          <label class="visually-hidden" for="password-user">Пароль</label>
+          <input class="login-form-password" type="password" name="password" id="password-user" placeholder="Пароль">
+        </p>
+        <p>
+          <button class="button" type="submit" name="button">Войти</button>
+          <a class="restore" href="#">Забыли пароль?</a>
+          <a class="register" href="#">Новая регистрация</a>
+        </p>
+      </form>
+    </section>
+
+    <section class="madal modal-cart">
+      <h2 class="visually-hidden">Корзина</h2>
+      <button class="button" type="button" name="button">Оформить заказ</button>
+    </section>
+
   </div>
 </body>
 
